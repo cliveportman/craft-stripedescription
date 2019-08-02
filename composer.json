@@ -1,0 +1,43 @@
+{
+    "name": "cliveportman/stripe-description",
+    "description": "Improves the description sent to Stripe so you have more information when exporting your Stripe payments.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "stripe description"
+    ],
+    "support": {
+        "docs": "https://github.com/cliveportman/stripe-description/blob/master/README.md",
+        "issues": "https://github.com/cliveportman/stripe-description/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Clive Portman",
+            "homepage": "https://clive.theportman.co"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "cliveportman\\stripedescription\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Stripe Description",
+        "handle": "stripe-description",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/cliveportman/stripe-description/master/CHANGELOG.md",
+        "components": {
+            "stripeDescriptionService": "cliveportman\\stripedescription\\services\\StripeDescriptionService"
+        },
+        "class": "cliveportman\\stripedescription\\StripeDescription"
+    }
+}
